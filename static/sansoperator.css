@@ -30,3 +30,17 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width: 768px) {
+    .content {
+        font-size: 14px;
+        height: fit-content;
+    }
+    .about-image {
+        height: auto;
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -42,19 +42,19 @@ body, html {
 
 @media screen and (max-width:768px){
     .video-background {
-        width: 75%;
-        height: 50%;
-        top: auto;
+        width: 100%;
+        height: auto;
+        top: 20%;
     }
     .main .title {
-        top: 42%;
+        top: 30%;
         left: auto;
     }
     .explanation {
         width: 85%;
         font-size: 12px;
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: auto;
         color: white;
     }
