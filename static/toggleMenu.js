@@ -1,5 +1,5 @@
 function toggleMenu() {
-    const menu = document.getElementsByClassName('dropdown-menu')[0];
+    const menu = document.getElementById('dropdown-menu');
     if (menu.style.display === 'flex') {
         menu.style.display = 'none';
     } else {
