@@ -57,7 +57,7 @@ body {
     cursor: pointer;
 }
 
-.video-background {
+.video-background-index {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .video-background {
+    .video-background-index {
         height: auto;
         width: 120%;
         top: 50%;

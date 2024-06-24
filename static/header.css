@@ -9,6 +9,7 @@
     background-color: black;
     color: white;
     height: 60px; /* Ensure a fixed height for vertical centering */
+    z-index: 1;
 }
 
 .header .title {
