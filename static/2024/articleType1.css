@@ -6,69 +6,75 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     font-family: Arial, sans-serif;
 }
-.explanation {
-    width: 85%;
-    font-size: 12px;
-    position: absolute;
-    top: 100%;
-    left: 20%;
-    color: white;
-}
 .main {
     width: 100%;
     height: 100%;
+    display: grid;
+    align-items: center;
 }
-.back {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    font-size: 54px;
-    text-decoration: none;
-    color: white;
-}
-.video-background {
+.main .video-background {
     width: 100%;
-    height: 75vh; /* 75% of the viewport height */
+    height: 100%;
     object-fit: cover;
-    position: absolute;
+    margin-bottom: 10px;
     display: block;
 }
 .main .title {
     font-size: 60px;
-    position: absolute;
     color: white;
-    bottom: 0;
+    position: relative;
+}
+.main .explanation {
+    font-size: 24px;
+    color: white;
+    height: fit-content;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 @media screen and (max-width:768px){
+    .main {
+        height: fit-content;
+    }
+    .main .explanation {
+        font-size: 18px;
+    }
     .video-background {
         width: 100%;
         height: auto;
-        aspect-ratio: 1;
-        top: 20%;
     }
     .main .title {
-        top: 30%;
-        left: auto;
+        margin-left: 2%;
+        margin-top: 0;
+        font-size: 40px;
     }
-    .explanation {
-        width: 85%;
-        font-size: 12px;
-        position: absolute;
-        top: 50%;
-        left: auto;
-        color: white;
+    .main .explanation {
+        margin-top: 0;
+        margin-left: 2%;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
     }
 }
 
 @media screen and (min-width:769px){
     .video-background {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
-
     .main .title {
         font-size: 60px;
         left: 2%;
+        position: absolute;
+        bottom: 2%;
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
     }
 }
