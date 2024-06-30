@@ -72,3 +72,18 @@ body {
 .grid-item:hover .overlay {
     opacity: 1;
 }
+
+@media screen and (max-width:768px){
+    .grid-item .overlay {
+        font-size: 24px;
+    }
+    .grid-item {
+        flex: 1 1 calc(100%);
+        max-width: calc(100%);
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+}
