@@ -1,10 +1,9 @@
 const video = document.getElementsByTagName('video')[0];
 
 const isVideoPlaying = video => !!(video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2);
-
+const button = document.createElement('button');
 setTimeout( () => 
 {if (!isVideoPlaying(video)){
-    const button = document.createElement('button');
     button.innerText = 'Video Not Playing?';
     button.style.position = 'absolute';
     button.style.top = '50%';
@@ -25,4 +24,10 @@ setTimeout( () =>
         button.remove();
     })
 }
+}, 1500);
+
+setTimeout( () => 
+    {if (isVideoPlaying(video)){
+        button.style.animation = "slideOut 0.5s forwards"; /* Add animation to slide out */
+    }
 }, 500);

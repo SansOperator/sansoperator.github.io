@@ -12,11 +12,6 @@ function processCSV(data) {
         return { name, image, year, link };
     });
 
-    pieces.forEach(piece => { 
-        if (piece.name[0] == '/'){
-            pieces.splice(pieces.indexOf(piece));
-        }
-    })
     generateMainContent(pieces);
 }
 
